@@ -30,8 +30,6 @@ namespace FuriousHeroes.Controllers
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
             var user = new ApplicationUser { 
-                FirstName = model.FirstName,
-                LastName = model.LastName,
                 UserName = model.UserName, 
                 Email = model.Email 
             };
